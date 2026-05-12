@@ -1,0 +1,674 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+
+/* ================= NAVBAR ================= */
+.navbar {
+  background-color: #b30000;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+
+/* ================= HERO SECTION ================= */
+.hero {
+  background-color: white;
+  padding: 90px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  color: #b30000;
+  font-size: 40px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin: 20px 0;
+  color: #444;
+}
+
+.buttons button {
+  padding: 12px 25px;
+  margin: 10px;
+  border: none;
+  background-color: #b30000;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.buttons .secondary {
+  background-color: #555;
+}
+
+
+/* ================= FEATURES SECTION ================= */
+.features {
+  background-color: #b30000;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card {
+  background-color: white;
+  width: 260px;
+  padding: 25px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+.card h3 {
+  color: #b30000;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #555;
+  font-size: 15px;
+}
+
+
+/* ================= FOOTER ================= */
+.footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
+
+
+/* ================= MODAL BACKGROUND ================= */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* ================= MODAL BOX ================= */
+.modal-box {
+  background-color: white;
+  width: 420px;
+  padding: 30px;
+  border-radius: 10px;
+  border: 3px solid #b30000;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+}
+
+
+/* ================= MODAL TITLE ================= */
+.modal-title {
+  text-align: center;
+  color: #b30000;
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+
+/* ================= CLOSE BUTTON ================= */
+.close {
+  float: right;
+  font-size: 26px;
+  cursor: pointer;
+  color: black;
+}
+
+
+/* ================= FORM LABEL ================= */
+.modal-box label {
+  font-weight: bold;
+}
+
+
+/* ================= INPUT FIELDS ================= */
+.modal-box input,
+.modal-box select {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+
+/* ================= BUTTON ================= */
+.btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #b30000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #8a0000;
+}
+
+
+/* ================= BOTTOM TEXT ================= */
+.bottom-text {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.bottom-text a {
+  color: #b30000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.bottom-text a:hover {
+  text-decoration: underline;
+}
+.user-menu
+{
+ position: relative;
+ display: inline-block;
+}
+
+.user-btn
+{
+ background: #c0392b;
+ color: white;
+ border: none;
+ padding: 8px 15px;
+ cursor: pointer;
+ border-radius: 5px;
+}
+
+.dropdown
+{
+ display: none;
+ position: absolute;
+ background: white;
+ min-width: 150px;
+ box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+ right: 0;
+}
+
+.dropdown a
+{
+ display: block;
+ padding: 10px;
+ text-decoration: none;
+ color: black;
+}
+
+.dropdown a:hover
+{
+ background: #f1f1f1;
+}
+/* ============================= */
+/* GLOBAL STYLES */
+/* ============================= */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f6f9;
+  color: #333;
+}
+
+section {
+  padding: 40px 20px;
+}
+
+/* ============================= */
+/* HERO SECTION */
+/* ============================= */
+
+
+/* ============================= */
+/* REQUIREMENTS SECTION */
+/* ============================= */
+
+.requirements {
+  background: #ffffff;
+  text-align: center;
+}
+
+.requirements h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #b30000;
+}
+
+.requirements ul {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: auto;
+}
+
+.requirements li {
+  background: #f9f9f9;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* ============================= */
+/* FORM SECTION */
+/* ============================= */
+
+.form-section {
+  background: #f4f6f9;
+}
+
+.form-section h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #b30000;
+}
+
+#donationForm {
+  background: white;
+  max-width: 750px;
+  margin: auto;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+#donationForm h3 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: #b30000;
+}
+
+.form-control {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.form-control:focus {
+  border-color: #b30000;
+  outline: none;
+  box-shadow: 0 0 5px rgba(179,0,0,0.2);
+}
+
+label {
+  font-weight: 500;
+  display: block;
+  margin-bottom: 5px;
+}
+
+button {
+  background: #b30000;
+  color: white;
+  padding: 14px 25px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #8f0000;
+}
+
+/* ============================= */
+/* AFTER CARE SECTION */
+/* ============================= */
+
+.after-care {
+  background: white;
+  text-align: center;
+}
+
+.after-care h2 {
+  color: #b30000;
+  margin-bottom: 30px;
+}
+
+.after-care p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.card-section {
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.floating-card {
+  background: #fff;
+  padding: 40px;
+  width: 100%;
+  max-width: 800px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  animation: floatUp 0.8s ease;
+}
+
+@keyframes floatUp {
+  from { transform: translateY(40px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+input, select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.radio-group label {
+  margin-right: 15px;
+}
+
+.btn-submit {
+  background: #b30000;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  background: #8f0000;
+}
+
+.popup-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-box {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+}
+
+.popup-box button {
+  margin-top: 15px;
+  background: #b30000;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 5px;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+}
+
+.hero-section {
+    padding: 100px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.red-bg {
+    background: linear-gradient(135deg, #b30000, #800000);
+    color: white;
+}
+
+.light-bg {
+    background: #f4f6f9;
+}
+
+.hero-container {
+    max-width: 800px;
+}
+
+.hero-container h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-card {
+    background: white;
+    padding: 50px;
+    width: 100%;
+    max-width: 850px;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+    animation: floatUp 0.7s ease;
+}
+
+.form-card {
+    border: 2px solid #b30000;
+}
+
+@keyframes floatUp {
+    from { transform: translateY(40px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.center-list {
+    list-style: none;
+    padding: 0;
+}
+
+.center-list li {
+    margin: 15px 0;
+    font-size: 18px;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.radio-group {
+    margin: 10px 0;
+}
+
+.radio-group label {
+    margin-right: 15px;
+}
+
+.main-btn {
+    background: #b30000;
+    color: white;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.main-btn:hover {
+    background: #800000;
+}
+
+.consent-box {
+    margin-top: 15px;
+}
+/* ===== FIXED DONATION HERO ===== */
+
+.donation-hero {
+    min-height: 60vh;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.red-bg {
+    background: linear-gradient(135deg, #b30000, #800000);
+    color: white;
+}
+
+.light-bg {
+    background: #f4f6f9;
+}
+/* Align blood group & health questions to left */
+.form-card h4,
+.form-card .radio-group {
+    text-align: left;
+}
+
+.form-card .radio-group {
+    justify-content: flex-start;
+}
+
+/* Remove card look */
+.full-requirements{
+    padding:60px 80px;
+}
+
+/* Red heading */
+.requirements-title{
+    color:#c0392b;
+    text-align:center;
+    margin-bottom:60px;
+    font-size:28px;
+}
+
+/* Full width row */
+.requirements-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width:100%;
+}
+
+/* Circle Design */
+.requirement-circle{
+    width:190px;
+    height:190px;
+    background:#c0392b;
+    color:white;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    font-weight:bold;
+    padding:20px;
+    box-shadow:0 12px 30px rgba(0,0,0,0.15);
+    transition:0.4s;
+    animation:floatUpDown 3s ease-in-out infinite;
+}
+
+/* Hover effect */
+.requirement-circle:hover{
+    transform:scale(1.08);
+    box-shadow:0 18px 40px rgba(0,0,0,0.25);
+}
+
+/* Floating animation */
+@keyframes floatUpDown{
+    0%{ transform:translateY(0px); }
+    50%{ transform:translateY(-12px); }
+    100%{ transform:translateY(0px); }
+}
+
+/* After Care Section */
+.full-care{
+    padding:60px 80px;
+}
+
+/* Red heading */
+.care-title{
+    color:#c0392b;
+    text-align:center;
+    margin-bottom:60px;
+    font-size:28px;
+}
+
+/* Row layout */
+.care-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width:100%;
+}
+
+/* Circle design */
+.care-circle{
+    width:190px;
+    height:190px;
+    background:#c0392b;
+    color:white;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    font-weight:bold;
+    padding:20px;
+    box-shadow:0 12px 30px rgba(0,0,0,0.15);
+    transition:0.4s;
+    animation:floatUpDown 3s ease-in-out infinite;
+}
+
+/* Hover effect */
+.care-circle:hover{
+    transform:scale(1.08);
+    box-shadow:0 18px 40px rgba(0,0,0,0.25);
+}
